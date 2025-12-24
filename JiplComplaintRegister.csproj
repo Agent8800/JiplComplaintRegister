@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- WPF desktop EXE -->
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- EXE name + icon -->
+    <AssemblyName>JIPL_Complaint_Register</AssemblyName>
+    <RootNamespace>JiplComplaintRegister</RootNamespace>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+
+    <!-- Recommended for WPF -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- NuGet packages used in the code I shared -->
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.0" />
+    <PackageReference Include="ClosedXML" Version="0.104.2" />
+    <PackageReference Include="QuestPDF" Version="2024.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Ensure icon is included in project -->
+    <None Include="app.ico" />
+  </ItemGroup>
+
+</Project>
