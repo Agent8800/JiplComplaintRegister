@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup .NET 8 SDK
       uses: actions/setup-dotnet@v3
@@ -36,7 +36,7 @@ jobs:
       shell: powershell
 
     - name: Upload Publish Folder as Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: windows-publish
         path: ${{ github.workspace }}/bin/Release/net8.0-windows/win-x64/publish
